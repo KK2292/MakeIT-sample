@@ -1,4 +1,4 @@
-import styles from "./Container.module.css";
+import styles from "./Contact.module.css";
 import { useEffect } from "react";
 
 export const Contact = () => {
