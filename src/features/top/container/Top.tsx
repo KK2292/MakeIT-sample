@@ -3,7 +3,7 @@ import {
   Achivements,
   Activity,
   FirstView,
-} from "../components/composites";
+} from "../components/modules";
 import styles from "./Top.module.css";
 
 export const Top = () => {
