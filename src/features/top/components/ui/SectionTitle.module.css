@@ -1,0 +1,30 @@
+.sectionTitle {
+  color: #fff;
+  font-family: "Outfit", sans-serif;
+  font-size: 128px;
+  font-weight: 500;
+  /* SectionTitleの左右にあるフラグメントを擬似要素で追加 */
+  &:before,
+  &:after {
+    color: #808080;
+  }
+  &:before {
+    content: "< ";
+  }
+
+  &:after {
+    content: " />";
+  }
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.alignRight {
+  text-align: right;
+}

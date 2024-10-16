@@ -1,0 +1,6 @@
+.mainContentsStyle {
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+  padding: 160px;
+}

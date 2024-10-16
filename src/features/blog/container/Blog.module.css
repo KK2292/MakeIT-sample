@@ -1,0 +1,11 @@
+.tentative {
+  color: #ddd;
+  font-size: 40px;
+  transform: translateY(300px);
+}
+.cardWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px 40px;
+}

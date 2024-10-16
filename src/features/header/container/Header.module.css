@@ -1,0 +1,26 @@
+.wrapper {
+  align-items: center;
+  backdrop-filter: blur(10px); /* 背景をぼかす できれば境界を滑らかにしたい */
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  height: 96px;
+  padding: 0 80px;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+}
+.logo {
+  color: #fff;
+  transition: 0.2s;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.nav {
+  align-items: center;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}

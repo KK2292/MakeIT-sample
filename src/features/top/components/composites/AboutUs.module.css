@@ -1,0 +1,10 @@
+.sectionContents {
+  display: flex;
+  gap: 80px;
+  justify-content: space-between;
+}
+
+.img {
+  border-radius: 10px;
+  height: 400px;
+}
