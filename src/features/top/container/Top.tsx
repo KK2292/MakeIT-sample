@@ -4,6 +4,9 @@ import {
   Activity,
   FirstView,
 } from "../components/modules";
+import { Contact } from "../components/modules/Contact";
+import { News } from "../components/modules/News";
+import { Team } from "../components/modules/Team";
 import styles from "./Top.module.css";
 
 export const Top = () => {
@@ -15,6 +18,9 @@ export const Top = () => {
         <AboutUs />
         <Achivements />
         <Activity />
+        <Team />
+        <News />
+        <Contact />
       </div>
     </>
   );

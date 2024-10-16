@@ -1,0 +1,6 @@
+.container {
+  align-items: flex-start; /* 親要素につられてheightが引き伸ばされないようにするため */
+  display: flex;
+  gap: 80px;
+  justify-content: space-between;
+}

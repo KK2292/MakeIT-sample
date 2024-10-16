@@ -1,0 +1,97 @@
+.container {
+  align-items: flex-start;/* 親要素につられてheightが引き伸ばされないようにするため */
+  display: flex;
+  gap: 80px;
+  justify-content: space-between;
+}
+.activityImageWrapper {
+  border-radius: 10px;
+  border: 2px solid #666;
+  background-color: #333;
+  color: #fff;
+  font-weight: 500;
+  padding: 0px 40px;
+  z-index: -2; /*活動日の白丸背景を文字の後ろにしたいけどこの要素よりは手前にしたいから */
+  & > li {
+    border-bottom: 1px solid #fff;
+    height: 256px;
+  }
+  & > li:last-child {
+    border-bottom: none;
+  }
+}
+
+.activityItem {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: space-between;
+  padding: 40px 24px;
+}
+
+.activityTitle {
+  font-size: 32px;
+  text-align: center;
+}
+
+.week {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: 700;
+  gap: 24px;
+  width: 100%;
+}
+
+.activityDay {
+  color: #111;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -47%); /*フォントの関係で50%だとちょっとずれる*/
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: -1; /*文字が消えないように*/
+  }
+}
+
+.activityTimeDetail {
+  font-size: 24px;
+  margin-right: auto;
+}
+
+.discordWrapper {
+  align-items: center;
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+}
+
+.discordIconWrapper {
+  background-color: #5865f2;
+  border-radius: 50%;
+  height: 112px;
+  position: relative;
+  width: 112px;
+}
+
+.discordIcon {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.discordText {
+  font-size: 64px;
+  font-family: "Outfit", sans-serif;
+  letter-spacing: 2px;
+}

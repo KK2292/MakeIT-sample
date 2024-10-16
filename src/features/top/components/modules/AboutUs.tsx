@@ -1,4 +1,4 @@
-import { SectionContainer } from "../layout";
+import { SectionContainer, SectionFlexContainer } from "../layout";
 import { SectionText, SectionTitle } from "../ui";
 import styles from "./AboutUs.module.css";
 
@@ -6,7 +6,7 @@ export const AboutUs = () => {
   return (
     <SectionContainer>
       <SectionTitle align={"left"}>About us</SectionTitle>
-      <div className={styles.sectionContents}>
+      <SectionFlexContainer>
         <SectionText>
           横を考えるたのはきっと始めでどうもますますた。
           <br />
@@ -20,7 +20,7 @@ export const AboutUs = () => {
           src="https://picsum.photos/720/400"
           alt=""
         />
-      </div>
+      </SectionFlexContainer>
     </SectionContainer>
   );
 };

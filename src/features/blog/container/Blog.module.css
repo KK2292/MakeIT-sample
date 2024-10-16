@@ -1,11 +1,8 @@
-.tentative {
-  color: #ddd;
-  font-size: 40px;
-  transform: translateY(300px);
-}
 .cardWrapper {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 64px 40px;
+  grid-template-columns: repeat(auto-fit, 400px);
+  justify-content: center;
+  margin: auto;
+  max-width: 1720px;
 }
