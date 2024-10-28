@@ -1,3 +1,4 @@
+import { Footer } from "../../footer/container/Footer";
 import {
   AboutUs,
   Achivements,
@@ -21,6 +22,7 @@ export const Top = () => {
         <Team />
         <News />
         <Contact />
+        <Footer />
       </div>
     </>
   );

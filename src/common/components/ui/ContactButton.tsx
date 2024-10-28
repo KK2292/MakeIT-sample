@@ -1,16 +1,10 @@
+import { Link } from "react-router-dom";
 import styles from "./ContactButton.module.css";
-import { useNavigate } from "react-router-dom";
 
 export const ContactButton = () => {
-  const navigate = useNavigate();
-
-  const navigateToContact = () => {
-    navigate("/contact");
-  };
-
   return (
-    <button className={styles.button} onClick={navigateToContact}>
-      Join/Job
-    </button>
+    <Link to="/contact" className={styles.button}>
+      <span className={styles.text}>Join/Job</span>
+    </Link>
   );
 };

@@ -6,8 +6,19 @@
   box-sizing: border-box;
   /* padding,borderを要素の幅と高さに含める設定 */
 }
+a {
+  text-decoration: none;
+  &:visited {
+    color: inherit; /*bodyのcolorを継承 */
+  }
+}
+
+p {
+  line-height: 1.4;
+}
 
 body {
   font-family: "Noto Sans JP", sans-serif;
   background-color: #111;
+  color: #fff;
 }

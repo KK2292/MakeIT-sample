@@ -1,0 +1,11 @@
+.sectionFlexContainer {
+  align-items: center;
+}
+
+.leftWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  gap: 120px;
+}

@@ -7,5 +7,5 @@ type SectionContainerProps = {
 export const SectionContainer = (props: SectionContainerProps) => {
   const { children } = props;
 
-  return <div className={styles.container}>{children}</div>;
+  return <section className={styles.container}>{children}</section>;
 };

@@ -3,6 +3,7 @@
   font-family: "Outfit", sans-serif;
   font-size: 128px;
   font-weight: 500;
+  white-space: nowrap;
   /* SectionTitleの左右にあるフラグメントを擬似要素で追加 */
   &:before,
   &:after {

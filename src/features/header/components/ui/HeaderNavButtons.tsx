@@ -1,28 +1,18 @@
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from "./HeaderNavButtons.module.css";
 
 export const HeaderNavButtons = () => {
-  const navigate = useNavigate();
-
-  const navigateToBlog = () => {
-    navigate("/blog");
-  };
-
-  const navigateToTeam = () => {
-    navigate("/team");
-  };
-
   return (
     <ul className={styles.navWrapper}>
       <li className={styles.navItem}>
-        <a className={styles.navLink} onClick={navigateToBlog}>
+        <Link to="/blog" className={styles.navLink}>
           Blog
-        </a>
+        </Link>
       </li>
       <li className={styles.navItem}>
-        <a className={styles.navLink} onClick={navigateToTeam}>
+        <Link to="/team" className={styles.navLink}>
           Team
-        </a>
+        </Link>
       </li>
       <li className={styles.navItem}>
         <a

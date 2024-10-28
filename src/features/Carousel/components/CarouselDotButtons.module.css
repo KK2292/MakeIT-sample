@@ -1,0 +1,29 @@
+.dotsWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 80px;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: #666;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+@media (hover: hover) {
+  /* 主要な入力デバイスがhoverに対応している場合に適用 */
+  .dot {
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}
+
+.dotIsActive {
+  background-color: #fff;
+}

@@ -1,0 +1,51 @@
+.footerContainer {
+  background-color: #eee;
+  border-radius: 50px;
+  color: #111;
+  padding: 24px 32px;
+  font-family: "Outfit", "Noto Sans JP", sans-serif;
+}
+.footerContainer > * {
+  border-bottom: 1px solid #888;
+  margin-bottom: 16px;
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
+
+.footerTitle {
+}
+
+.circleName {
+  font-size: 96px;
+  line-height: 1;
+}
+
+.supportedBy {
+  color: #666;
+  font-weight: 100;
+  margin-top: -16px;
+  padding: 0 8px;
+}
+
+.schoolName {
+  color: #666;
+  font-weight: 100;
+  margin-top: -8px;
+  font-size: 24px;
+  padding: 0 8px;
+}
+
+.linksItem {
+  cursor: pointer;
+}
+
+.linksItem > a {
+  color: #111;
+  text-decoration: none;
+}
+
+.address{
+  color: #666;
+}

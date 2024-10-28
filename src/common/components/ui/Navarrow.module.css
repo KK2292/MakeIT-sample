@@ -1,0 +1,41 @@
+.arrowCircle {
+  position: relative;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -6px);
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  margin: 5.7px 0;
+  background-color: #fff;
+  transition: 0.2s ease-out;
+}
+
+.arrow::before,
+.arrow::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 0;
+  width: 10px;
+  height: 2px;
+  border-radius: 9999px;
+  background-color: #fff;
+  transform-origin: calc(100% - 1px) 50%;
+}
+
+.arrow::before {
+  transform: rotate(45deg);
+}
+
+.arrow::after {
+  transform: rotate(-45deg);
+}

@@ -1,0 +1,45 @@
+.wrapper {
+  flex-grow: 1;
+  max-width: 900px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  transition: 0.2s;
+  cursor: pointer;
+  padding: 16px;
+  gap: 40px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+  &:hover span {
+    /* arrowを動かす */
+    transform: translate(-30%, -6px);
+  }
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 8px;
+  mask-image: linear-gradient(to left, transparent 0, black 64px);
+}
+
+.date {
+  color: #888;
+}
+
+.title {
+  color: #fff;
+  font-size: 32px;
+  height: 45px;
+  overflow: hidden;
+}
+
+.arrowWrapper {
+  flex-basis: 40px;
+}

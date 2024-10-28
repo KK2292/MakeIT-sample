@@ -1,0 +1,19 @@
+.carousel {
+  position: relative;
+  right: 136px;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+}
+
+.list {
+  max-width: 100%;
+  margin: 0 auto;
+  white-space: nowrap;
+  transition: 0.5s;
+}
+.listItem {
+  display: inline-block;
+  max-width: 100%;
+  white-space: normal;
+}
